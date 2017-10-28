@@ -1,8 +1,8 @@
 header {
-  width: 90%;
+  width: 100%;
 }
 .container .main-inner {
-  width: 90%;
+  width: 130%;
 }
 .content-wrap {
   width: calc(100% - 260px);
@@ -1849,7 +1849,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff085c;
+  background: #7e423b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2624,7 +2624,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 960px;
+  width: 90%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2684,7 +2684,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 960px;
+  width: 90%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
