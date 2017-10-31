@@ -327,6 +327,10 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="vcomments"></div>
+    </div>
+  
 
 
 
@@ -376,16 +380,16 @@
             
 
             
-
-            
               
               
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
+            
+
             
 
           </nav>
@@ -597,6 +601,21 @@
 
 
 
+
+  
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7-rc3/dist/Valine.min.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        av: AV,
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        app_id: 'MjsoPrK7lTAevv7DV5yovqGB-gzGzoHsz',
+        app_key: 'J4vlRUkWQ2mnSjFJ79pDmuIp',
+        placeholder: 'Comment input placeholder'
+    });
+  </script>
 
 
 
