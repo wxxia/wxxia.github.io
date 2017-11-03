@@ -87,15 +87,15 @@
 <meta property="og:site_name" content="I love Peanuts">
 <meta property="og:description" content="自编码网络 自编码网络（AutoEncoder），是一类输入完全等于输出的有监督神经网络。其特征为：  输入和输出的神经元个数完全相等 输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$ 隐层神经元个数小于输入（输出）神经元个数  其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。  多层感知器 多层感知器(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AE.jpg?raw=true">
-<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MLP.jpg?raw=true">
-<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AANN+GA.png?raw=true">
-<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MTLNN.jpg?raw=true">
-<meta property="og:updated_time" content="2017-11-03T12:42:07.520Z">
+<meta property="og:image" content="https://github.com/wxxia/Img/blob/master/imgs/AE.jpg?raw=true">
+<meta property="og:image" content="https://github.com/wxxia/Img/blob/master/imgs/MLP.jpg?raw=true">
+<meta property="og:image" content="https://github.com/wxxia/Img/blob/master/imgs/AANN+GA.png?raw=true">
+<meta property="og:image" content="https://github.com/wxxia/Img/blob/master/imgs/MTLNN.jpg?raw=true">
+<meta property="og:updated_time" content="2017-11-03T12:52:58.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="论文思路mark(1)">
 <meta name="twitter:description" content="自编码网络 自编码网络（AutoEncoder），是一类输入完全等于输出的有监督神经网络。其特征为：  输入和输出的神经元个数完全相等 输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$ 隐层神经元个数小于输入（输出）神经元个数  其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。  多层感知器 多层感知器(">
-<meta name="twitter:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AE.jpg?raw=true">
+<meta name="twitter:image" content="https://github.com/wxxia/Img/blob/master/imgs/AE.jpg?raw=true">
 
 
 
@@ -409,16 +409,16 @@
 <li><strong>输入和输出的神经元个数完全相等</strong></li>
 <li><strong>输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$</strong></li>
 <li><strong>隐层神经元个数小于输入（输出）神经元个数</strong>
-<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AE.jpg?raw=true" alt="自编码网络">
+<img src="https://github.com/wxxia/Img/blob/master/imgs/AE.jpg?raw=true" alt="自编码网络">
 其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。</li>
 </ul>
 <h2>多层感知器</h2>
 <p>多层感知器(Muti-Layer Percetron)是一类最简单也最常见的神经网络结构，多采用BP算法学习网络权重，以拟合输出层和输入层之间的关系。
 假设样本集合有4维属性，用前三维属性拟合第四维属性，即求函数$f $，使得$x_4=f(x_1,x_2,x_3)$。求解时，可将$x_1,x_2,x_3$作为输入端，$x_4$作为输出端，构建网络架构。
-<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MLP.jpg?raw=true" alt="多层感知器"></p>
+<img src="https://github.com/wxxia/Img/blob/master/imgs/MLP.jpg?raw=true" alt="多层感知器"></p>
 <h2>自相关网络</h2>
 <p>在缺失数据填补领域，有一种思路是采用自相关网络+GA遗传算法来实现填补，其工作示意图如下：
-<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AANN+GA.png?raw=true" alt="自相关网络"></p>
+<img src="https://github.com/wxxia/Img/blob/master/imgs/AANN+GA.png?raw=true" alt="自相关网络"></p>
 <p>个人观点，该方法存在以下问题：</p>
 <ul>
 <li>自相关网络完全沿用了自编码器的思路，即“输入等于输出”。在网络训练时，由于期望输出信息完全包含于输入，BP算法会以一种偷懒的方式完成训练过程，即类似于使网络的输出和输入直接连接，而未真正训练出属性之间的非线性关系。</li>
@@ -427,7 +427,7 @@
 </ul>
 <h3>改进网络结构描述</h3>
 <p>对于具有4列属性的样本集合，改进后的自相关网络示意图如下：
-<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MTLNN.jpg?raw=true" alt="MTLN">
+<img src="https://github.com/wxxia/Img/blob/master/imgs/MTLNN.jpg?raw=true" alt="MTLN">
 上图为4*（3+4）*4的网络结构，其中：</p>
 <ul>
 <li><strong>输入层和输出层的节点数均为4</strong></li>
