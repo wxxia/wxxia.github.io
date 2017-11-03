@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="深度学习,神经网络,缺失数据填补," />
 
 
 
@@ -79,17 +79,23 @@
 
 
 
-<meta name="description" content="初心をわすれないで">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="自编码网络 自编码网络（AutoEncoder），是一类输入完全等于输出的有监督神经网络。其特征为：  输入和输出的神经元个数完全相等 输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$ 隐层神经元个数小于输入（输出）神经元个数  其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。  多层感知器 多层感知器(">
+<meta name="keywords" content="深度学习,神经网络,缺失数据填补">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文思路mark(1)">
+<meta property="og:url" content="http://yoursite.com/2017/11/03/论文思路mark/index.html">
 <meta property="og:site_name" content="I love Peanuts">
-<meta property="og:description" content="初心をわすれないで">
+<meta property="og:description" content="自编码网络 自编码网络（AutoEncoder），是一类输入完全等于输出的有监督神经网络。其特征为：  输入和输出的神经元个数完全相等 输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$ 隐层神经元个数小于输入（输出）神经元个数  其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。  多层感知器 多层感知器(">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-28T01:47:52.814Z">
+<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AE.jpg?raw=true">
+<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MLP.jpg?raw=true">
+<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AANN+GA.png?raw=true">
+<meta property="og:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MTLNN.jpg?raw=true">
+<meta property="og:updated_time" content="2017-11-03T12:42:07.520Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="初心をわすれないで">
+<meta name="twitter:title" content="论文思路mark(1)">
+<meta name="twitter:description" content="自编码网络 自编码网络（AutoEncoder），是一类输入完全等于输出的有监督神经网络。其特征为：  输入和输出的神经元个数完全相等 输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$ 隐层神经元个数小于输入（输出）神经元个数  其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。  多层感知器 多层感知器(">
+<meta name="twitter:image" content="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AE.jpg?raw=true">
 
 
 
@@ -119,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/03/论文思路mark/"/>
 
 
 
 
 
-  <title>标签 | I love Peanuts</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>论文思路mark(1) | I love Peanuts</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -285,40 +291,271 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/03/论文思路mark/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WX">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/wx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="I love Peanuts">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 3 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/深度学习/" style="font-size: 12px; color: #ccc">深度学习</a> <a href="/tags/神经网络/" style="font-size: 12px; color: #ccc">神经网络</a> <a href="/tags/缺失数据填补/" style="font-size: 12px; color: #ccc">缺失数据填补</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">论文思路mark(1)</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-03T19:09:37+08:00">
+                2017-11-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/研究工作/" itemprop="url" rel="index">
+                    <span itemprop="name">研究工作</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/11/03/论文思路mark/" class="leancloud_visitors" data-flag-title="论文思路mark(1)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2>自编码网络</h2>
+<p>自编码网络（AutoEncoder），是一类输入完全等于输出的有监督神经网络。其特征为：</p>
+<ul>
+<li><strong>输入和输出的神经元个数完全相等</strong></li>
+<li><strong>输出层与输入层存在关系 ： $y_k=x_k,k=1,2,...,n$</strong></li>
+<li><strong>隐层神经元个数小于输入（输出）神经元个数</strong>
+<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AE.jpg?raw=true" alt="自编码网络">
+其目的是：将高维的输入样本压缩到维度较小的隐藏层空间，以提取特征；并可通过输出层重建高维样本。类似于一个加密解密的过程。</li>
+</ul>
+<h2>多层感知器</h2>
+<p>多层感知器(Muti-Layer Percetron)是一类最简单也最常见的神经网络结构，多采用BP算法学习网络权重，以拟合输出层和输入层之间的关系。
+假设样本集合有4维属性，用前三维属性拟合第四维属性，即求函数$f $，使得$x_4=f(x_1,x_2,x_3)$。求解时，可将$x_1,x_2,x_3$作为输入端，$x_4$作为输出端，构建网络架构。
+<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MLP.jpg?raw=true" alt="多层感知器"></p>
+<h2>自相关网络</h2>
+<p>在缺失数据填补领域，有一种思路是采用自相关网络+GA遗传算法来实现填补，其工作示意图如下：
+<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/AANN+GA.png?raw=true" alt="自相关网络"></p>
+<p>个人观点，该方法存在以下问题：</p>
+<ul>
+<li>自相关网络完全沿用了自编码器的思路，即“输入等于输出”。在网络训练时，由于期望输出信息完全包含于输入，BP算法会以一种偷懒的方式完成训练过程，即类似于使网络的输出和输入直接连接，而未真正训练出属性之间的非线性关系。</li>
+<li>利用GA遗传算法求解目标函数最优解的前提是：网络训练效果非常好，并且网络已经挖掘出数据属性之间的真正联系。
+针对上述第一个缺点，本文基于MTL思路，在自相关网络中，引入了回归任务，及通过 **”弱化跟踪，强化回归“**的方式，使得自相关网络避免偷懒，从而真正学习到属性之间的非线性关系。</li>
+</ul>
+<h3>改进网络结构描述</h3>
+<p>对于具有4列属性的样本集合，改进后的自相关网络示意图如下：
+<img src="https://github.com/wxxia/wxxia.github.io/blob/master/my_img/MTLNN.jpg?raw=true" alt="MTLN">
+上图为4*（3+4）*4的网络结构，其中：</p>
+<ul>
+<li><strong>输入层和输出层的节点数均为4</strong></li>
+<li><strong>隐藏层中，3个蓝色空心节点负责跟踪任务，4个蓝色实心节点负责回归任务</strong></li>
+<li><strong>隐藏层激活函数为sigmod函数，输出层激活函数为线性函数</strong></li>
+</ul>
+<h3>基于BP算法的权重更新推导</h3>
+<h4>0.符号说明</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$w_{ji}$</td>
+<td style="text-align:center">输入层节点i到隐藏层节点j的连接权重</td>
+</tr>
+<tr>
+<td style="text-align:center">$b_{1i}$</td>
+<td style="text-align:center">隐藏层节点j的阈值</td>
+</tr>
+<tr>
+<td style="text-align:center">$v_{kj}$</td>
+<td style="text-align:center">隐藏层节点j到输出层节点k的连接权重</td>
+</tr>
+<tr>
+<td style="text-align:center">$b_{2i}$</td>
+<td style="text-align:center">输出层节点j的阈值</td>
+</tr>
+</tbody>
+</table>
+<h4>1.跟踪任务（自相关）：(3个蓝色空心节点)</h4>
+<p>隐藏层输入为：$I(j)=\sum_{i=1}^{4}(w_{ji}x_{i})+b_{1j}$
+隐藏层输出为：$net(j)=\dfrac{1}{1+exp(-I(j))}$（sigmod函数）
+输出层输入为：$O1(k)=\sum_{j=1}^{3}(v_{kj}*net(j))+b_{2k}$
+输出层输出为：$O1(k)$（线性函数）</p>
+<h4>2.回归任务：（4个蓝色实心节点）</h4>
+<p>此类节点不是传统意义上的隐藏层节点，针对不同的输出层节点，该隐层节点会有不同的输出结果。
+针对输出层第一个节点，隐藏层输入、输出为：$$I(1，j)=\sum_{i=1,i \neq 1}^{4}(w_{ji}x_{i})+b_{1j}，net(1，j)=\dfrac{1}{1+exp(-I(1，j))}$$
+针对输出层第二个节点，隐藏层输入、输出为：$$I(2，j)=\sum_{i=1,i \neq 2}^{4}(w_{ji}x_{i})+b_{1j}，net(2，j)=\dfrac{1}{1+exp(-I(2，j))}$$
+针对输出层第三个节点，隐藏层输入、输出为：$$I(3，j)=\sum_{i=1,i \neq 3}^{4}(w_{ji}x_{i})+b_{1j}，net(3，j)=\dfrac{1}{1+exp(-I(3，j))}$$
+针对输出层第四个节点，隐藏层输入、输出为：$$I(4，j)=\sum_{i=1,i \neq 4}^{4}(w_{ji}x_{i})+b_{1j}，net(4，j)=\dfrac{1}{1+exp(-I(4，j))}$$
+输出层输入、输出：$O2(k)=\sum_{j=4}^{7}(v_{kj}*net(k,j))+b_{2k}$</p>
+<h4>3.网络训练的目标函数</h4>
+<p>$$E=\sum_{k=1}^4\dfrac{1}{2}\alpha *(x_k-O1(k))^2+\dfrac{1}{2}(1-\alpha)(x_k-O2(k))^2$$</p>
+<h4>4.网络权值更新</h4>
+<p><strong>隐藏层到输出层的权重$v_{kj}、b_{2k}$的更新</strong></p>
+<p>$$\frac{\partial E}{\partial O1(k)}\frac{\partial O1(k)}{\partial v_{kj}}+\frac{\partial E}{\partial O2(k)}\frac{\partial O2(k)}{\partial v_{kj}} =-\sum_{k=1}^4[\alpha(x_k-O1(k))*net(j)+(1-\alpha)(x_k-O2(k))*net(k,j)]$$</p>
+<p>$$ =-\sum_{k=1}^4 [\alpha(x_k-O1(k))*net(j)+(1-\alpha)(x_k-O2(k))*net(k,j)] $$</p>
+<p>同理：
+\begin{eqnarray*}
+\frac{\partial E}{\partial b_{2k}}&amp;=&amp;-\sum_{k=1}^4[\alpha(x_k-O1(k))+(1-\alpha)(x_k-O2(k))]
+\end{eqnarray*}
+<strong>输入层到隐藏层的权重$w_{ji}、b_{1j}$的更新</strong></p>
+<p>$$ \frac{\partial E}{\partial w_{ji}} = \sum_{k=1}^4\frac{\partial E}{\partial O1(k)}\frac{\partial O1(k)}{\partial net(j)}\frac{\partial net(j)}{\partial I(j)}\frac{\partial I(j)}{\partial w_{ji}}+\frac{\partial E}{\partial O2(k)}\frac{\partial O2(k)}{\partial net(i,j)}\frac{\partial net(i,j)}{\partial I(i,j)}\frac{\partial I(i,j)}{\partial w_{ji}} $$</p>
+<p>$$ = -\sum_{k=1}^4[\sum_{j=1}^3\alpha(x_k-O1(k))* v_{kj}* I(j)* (1-I(j))* x(i)+\sum_{j=4}^7(1-\alpha)(x_k-O2(k))* v_{kj}* I(k,j)* (1-I(k,j))* x(i)] $$</p>
+<p>同理：
+\begin{eqnarray*}
+\frac{\partial E}{\partial b_{1k}}&amp;=&amp;-\sum_{k=1}^4[\sum_{j=1}^3 \alpha(x_k-O1(k))* v_{kj}* I(j)* (1-I(j))+\sum_{j=4}^7 (1-\alpha)(x_k-O2(k))* v_{kj}* I(k,j)* (1-I(k,j))]
+\end{eqnarray*}</p>
+<h4>5.实验验证</h4>
+<p>制定实验计划中...</p>
+<p>未完，待续</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/深度学习/" rel="tag"><i class="fa fa-tag"></i> 深度学习</a>
+          
+            <a href="/tags/神经网络/" rel="tag"><i class="fa fa-tag"></i> 神经网络</a>
+          
+            <a href="/tags/缺失数据填补/" rel="tag"><i class="fa fa-tag"></i> 缺失数据填补</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/28/我在想什么/" rel="next" title="我在想什么">
+                <i class="fa fa-chevron-left"></i> 我在想什么
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -356,8 +593,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -431,6 +677,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">自编码网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">多层感知器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">自相关网络</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">改进网络结构描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">基于BP算法的权重更新推导</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.1.</span> <span class="nav-text">0.符号说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.2.</span> <span class="nav-text">1.跟踪任务（自相关）：(3个蓝色空心节点)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.3.</span> <span class="nav-text">2.回归任务：（4个蓝色实心节点）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.4.</span> <span class="nav-text">3.网络训练的目标函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.5.</span> <span class="nav-text">4.网络权值更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.6.</span> <span class="nav-text">5.实验验证</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1052,7 +1314,7 @@
         showTime(Counter);
       }
     });
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script>
 
 
 
@@ -1062,6 +1324,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
